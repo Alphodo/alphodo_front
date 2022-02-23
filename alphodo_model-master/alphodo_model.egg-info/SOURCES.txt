@@ -1,0 +1,11 @@
+setup.py
+alphodo_model/__init__.py
+alphodo_model/config.py
+alphodo_model/datagen.py
+alphodo_model/infer.py
+alphodo_model/model.py
+alphodo_model/train.py
+alphodo_model.egg-info/PKG-INFO
+alphodo_model.egg-info/SOURCES.txt
+alphodo_model.egg-info/dependency_links.txt
+alphodo_model.egg-info/top_level.txt

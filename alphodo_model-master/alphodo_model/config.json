@@ -1,0 +1,9 @@
+{
+	"DATA_HOME": "./alphodo_model",
+	"EX_HOME": "",
+	"MOD_HOME": "/Users/spagett1maker/MOD_HOME",
+	"GPU": "",
+	"BATCH_SIZE": "",
+	"TRAIN_STEP": "",
+	"EVAL_STEP": ""
+}
