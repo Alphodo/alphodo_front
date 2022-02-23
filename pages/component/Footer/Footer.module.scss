@@ -1,0 +1,97 @@
+@import "../../../styles/responsive";
+@import "../../../public/fonts/pretendard";
+
+.footer {
+  //background-image: linear-gradient(0deg, #3c336e, #062165); //,BBB9E9
+  background-color: #e9edef;
+  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-top: 40px;
+
+  @include breakpoint(md) {
+    display: flex;
+    position: absolute;
+    min-height: 300px;
+    left: 0;
+    right: 0;
+    padding-top: 44px;
+  }
+
+  > .title {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #41556c;//#bfbfbf;
+    margin-left: 22px;
+
+    @include breakpoint(md) {
+      margin-left: 0;
+      font-size: 30px;
+    }
+  }
+
+  > .linkGroup {
+    font-family: Pretendard, sans-serif;
+    margin-left: 22px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint(md) {
+      margin-left: 30px;
+      padding-bottom: 0;
+    }
+
+    > .linkColumn {
+      flex: 1 0 50%;
+      min-width: 100px;
+      margin-top: 22px;
+
+      @include breakpoint(md) {
+        min-width: 160px;
+        margin-top: 0;
+        margin-right: 30px;
+        flex: 1 0 calc(25% - 80px);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      > div {
+        font-size: 10px;
+        color: #626262;//#bfbfbf;
+        margin-top: 14px;
+
+        &.admin {
+          color: #2f8eec !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          text-decoration-line: underline;
+        }
+
+        @include breakpoint(md) {
+          font-size: 16px;
+        }
+
+        &:first-child {
+          margin-top: 0;
+          font-size: 14px;
+          font-weight: bold;
+
+          @include breakpoint(md) {
+            font-size: 21px;
+          }
+        }
+      }
+
+    }
+  }
+}
